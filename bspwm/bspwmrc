@@ -5,15 +5,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/launch.sh
 
 ### Monitors
-bspc monitor -d I II III IV V VI VII VIII IX 
-# workspaces() {
-# 	name=1
-# 	for monitor in `bspc query -M`; do
-# 		bspc monitor ${monitor} -n "$name" -d '' '' '' '' '' '' '漣'
-# 		let name++
-# 	done
-# }
-# workspaces
+bspc monitor -d I II III IV
 
 ### BSPWM Configuration
 
@@ -26,9 +18,9 @@ bspc config borderless_monocle      true
 bspc config gapless_monocle         true
 
 # Colors
-bspc config focused_border_color    "#2c54ab"
-bspc config normal_border_color     "#adbcdb"
-bspc config active_border_color     "#444b6a"
+bspc config focused_border_color    "#7AA2F7"
+bspc config normal_border_color     "#A9B1D6"
+# bspc config active_border_color     "#444b6a"
 
 bspc config focus_follows_pointer   true
 
