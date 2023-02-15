@@ -2,7 +2,11 @@
 
 ### Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
-$HOME/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh &
+
+# Use feh to set wallpaper.
+$HOME/.fehbg
+
 
 ### Monitors
 bspc monitor -d I II III IV
