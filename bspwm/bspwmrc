@@ -3,9 +3,10 @@
 ### Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/launch.sh &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
 
-# Use feh to set wallpaper.
-$HOME/.fehbg
+# Use feh config file to set wallpaper.
+$HOME/.config/feh/fehbg
 
 
 ### Monitors
