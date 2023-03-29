@@ -108,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # Start bluetooth service
 alias startbt="systemctl start bluetooth.service"
 # Update personal notes
-alias upnotes="cd ~/repositories/personalNotes; gs; ga .; cm 'update notes' .; git push"
+alias upnotes="cd ~/repos/personalNotes; gs; ga .; cm 'update notes' .; git push"
 # Set secondary monitor.
 alias secMonitor="xrandr --output eDP --primary --mode 1920x1080 --rotate normal --output HDMI-A-0 --mode 1360x768 --rotate normal --right-of eDP"
 
@@ -126,13 +126,21 @@ alias gs="git status"
 alias ga="git add"
 alias cm="git commit -m"
 alias gc="git checkout"
-
 alias gpl="git pull"
 alias gps="git push"
-
 alias gr="git restore"
 alias grs="git restore --staged"
 alias grsh="git reset --soft HEAD~1"
+
+#   Yarn
+alias yd="yarn dev"
+alias yl="yarn lint"
+alias yt="yarn test"
+
+####      Projects
+alias con="cd ~/.config/nvim/lua/custom/; nv"
+alias jug="cd ~/repos/juguetear-web/; nv"
+alias por="cd ~/repos/portfolio/; nv"
 
 # Starship prompt
 eval "$(starship init zsh)"
