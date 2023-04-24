@@ -8,11 +8,11 @@ $username\
 $directory\
 $docker_context\
 [ ](fg:#f7768e)\
-$git_branch\
+$git_branch
+
+[󱞪 ](fg:#f7768e)\
 """
 
-# Disable the blank line at the start of the prompt
-# add_newline = true
 
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
@@ -36,7 +36,7 @@ truncation_symbol = "…/"
 "Downloads" = "  "
 "Music" = "  "
 "Images" = "  "
-"repos" = "  "
+"dev" = "  "
 # Keep in mind that the order matters. For example:
 # "Important Documents" = "  "
 # will not be replaced, because "Documents" was already substituted before.

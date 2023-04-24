@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	alacritty -e zsh
+	alacritty -e fish
 
 # program launcher
 super + @space
@@ -18,11 +18,17 @@ super + Escape
 ### Programs
 #
 
+super + shift + d
+  discord
+
 super + shift + w
-  google-chrome-stable
+  firefox-developer-edition
 
 super + shift + e
   logseq
+
+super + shift + f
+  thunar
 
 #
 # bspwm hotkeys
