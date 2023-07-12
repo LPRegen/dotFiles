@@ -2,20 +2,17 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-#   Update personal notes
-alias upnotes="cd ~/dev/personalNotes; gs; ga .; cm 'update notes' .; git push"
-# Set secondary monitor.
-alias secMonitor="xrandr --output eDP --primary --mode 1920x1080 --rotate normal --output HDMI-A-0 --mode 1360x768 --rotate normal --right-of eDP"
+# Disable welcome message.
+set -g fish_greeting
 
-###	      Commands
 #   Navigation
 alias z='cd ..'
 
 #   Pacman
-alias pacup="sudo pacman -Syu --noconfirm"
-alias pacin="sudo pacman -S"
-alias pacre="sudo pacman -Rsn"
-alias pacqry="sudo pacman -Qs"
+alias pacu="sudo pacman -Syu --noconfirm"
+alias paci="sudo pacman -S"
+alias pacr="sudo pacman -Rsn"
+alias pacq="sudo pacman -Qs"
 alias pacdb="sudo pacman -Ss"
 
 #   Github
@@ -23,12 +20,13 @@ alias gs="git status"
 alias ga="git add"
 alias cm="git commit -m"
 alias gc="git checkout"
+alias gC="git clone"
 alias gpl="git pull"
 alias gps="git push"
 alias gr="git restore"
 alias grs="git restore --staged"
 alias grsh="git reset --soft HEAD~1"
-#- Stash
+#   Stash
 alias gsa="git stash"
 alias gsp="git stash pop"
 # INFO: https://www.atlassian.com/git/tutorials/saving-changes/git-stash#stashing-your-work
@@ -40,13 +38,16 @@ alias yl="yarn lint"
 alias yt="yarn test"
 alias ys="yarn storybook"
 
-### 	    Nvim configs
-alias nc="env NVIM_APPNAME=nvim-chad nvim"
-alias nm="env NVIM_APPNAME=nvim-manu nvim"
+### 	    Nvim
+alias nm="nvim"
+alias mm="cd ~/.config/nvim/; nm"
 
+# Neorg nvim
+alias nj="nm '+Neorg index'"
 
-alias cc="cd ~/.config/nvim-chad/lua/custom/; env NVIM_APPNAME=nvim-chad nvim"
-alias mm="cd ~/.config/nvim-manu/; nm"
+# Multiple configs -> Launch nvim nightly with a specific config.
+# alias nc="env NVIM_APPNAME=nvim-chad nvim"
+# alias nm="env NVIM_APPNAME=nvim-manu nvim"
 # INFO: https://gist.github.com/elijahmanor/b279553c0132bfad7eae23e34ceb593b
 
 ###       Directories
@@ -56,6 +57,5 @@ alias por="cd ~/dev/portfolio/; nm"
 
 #   Fish
 alias cf="cd ~/.config/fish/; nm config.fish"
-
 
 starship init fish | source
