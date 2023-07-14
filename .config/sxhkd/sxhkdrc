@@ -44,7 +44,7 @@ XF86AudioMute
   pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 XF86Audio{Prev,Next,Play}
-	playerctl {previous,next, play-pause}
+	playerctl {previous,next,play-pause}
 
 #
 # bspwm hotkeys
