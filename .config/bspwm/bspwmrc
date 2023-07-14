@@ -14,10 +14,9 @@ $HOME/.fehbg
 
 
 ### Monitors
-bspc monitor -d I II III IV
+bspc monitor -d I II
 
 ### BSPWM Configuration
-
 bspc config border_width            2
 bspc config window_gap              6
 # bspc config top_padding             0
