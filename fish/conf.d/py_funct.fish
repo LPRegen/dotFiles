@@ -3,7 +3,7 @@ function vEnv
     case create
       python3 -m venv .venv
     case activate
-      source bin/activate.fish
+      source .venv/bin/activate.fish
     case installAll
       python3 -m pip install -r requirements.txt
     case install
