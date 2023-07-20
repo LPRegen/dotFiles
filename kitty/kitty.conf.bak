@@ -2336,9 +2336,3 @@ dynamic_background_opacity yes
 
 #: }}}
 
-
-
-# BEGIN_KITTY_THEME
-# Catppuccin-Macchiato
-include current-theme.conf
-# END_KITTY_THEME
