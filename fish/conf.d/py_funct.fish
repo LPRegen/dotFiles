@@ -21,3 +21,17 @@ function vEnv
     python3 -m pip install $argv
   end
 end
+
+function ga
+  argparse h/help -- $argv
+  or return
+  if set -ql _flag_help
+    echo 'Add given files to git staging area, and takes the last argument as its commit message'
+    return 0
+  end
+
+  set -l files $argv[1..-2]
+  set -l message $argv[-1]
+
+  git add $files; git commit -m $message
+end

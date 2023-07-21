@@ -14,8 +14,8 @@ alias pacdb="sudo pacman -Ss"
 
 #   Github
 alias gs="git status"
-alias ga="git add"
-alias cm="git commit -m"
+# alias ga="git add"
+# alias cm="git commit -m"
 alias gc="git checkout"
 alias gC="git clone"
 alias gpl="git pull"
