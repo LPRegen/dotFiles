@@ -2,14 +2,21 @@
 
 ### Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
+
+# Remap backspace to Caps key.
+setxkbmap -option caps:backspace &
+setxkbmap -option shift:both_capslock &
+xmodmap -e "clear Lock" &
+
 # Toggle kb layouts
-setxkbmap -option grp:alt_shift_toggle -layout us,latam,us -variant colemak, &
+# setxkbmap -option grp:alt_shift_toggle -layout us,latam &
 # setxkbmap -variant intl,colemak grp:alt_shift_toggle   &
 # Launch polybar
 $HOME/.config/polybar/launch.sh &
 # Start notifications
 dunst &
 # /usr/lib/xfce4/notifyd/xfce4-notifyd &
+
 # Use feh config file to set wallpaper.
 $HOME/.fehbg
 
@@ -19,7 +26,7 @@ bspc monitor -d I II
 
 ### BSPWM Configuration
 bspc config border_width            2
-bspc config window_gap              6
+bspc config window_gap              4
 # bspc config top_padding             0
 
 bspc config split_ratio             0.52
