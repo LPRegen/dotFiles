@@ -14,8 +14,8 @@ alias pacdb="sudo pacman -Ss"
 
 #   Github
 alias gs="git status"
-# alias ga="git add"
-# alias cm="git commit -m"
+alias ga="git add"
+alias cm="git commit -m"
 alias gc="git checkout"
 alias gC="git clone"
 alias gpl="git pull"
@@ -39,19 +39,12 @@ alias ys="yarn storybook"
 alias nm="nvim"
 alias mm="cd ~/.config/nvim/; nm"
 
-# Neorg nvim
-alias nj="nm '+Neorg index'"
-
 # Multiple configs -> Launch nvim nightly with a specific config.
-# alias nc="env NVIM_APPNAME=nvim-chad nvim"
-# alias nm="env NVIM_APPNAME=nvim-manu nvim"
+# alias nc="env NVIM_APPNAME=nvim-colemak nvim"
+# alias nm="env NVIM_APPNAME=nvim nvim"
 # INFO: https://gist.github.com/elijahmanor/b279553c0132bfad7eae23e34ceb593b
 
 ###       Directories
-#   Projects
-alias jug="cd ~/dev/juguetear-web/; nm"
-alias por="cd ~/dev/portfolio/; nm"
-
 #   Fish
 alias cf="cd ~/.config/fish/; nm config.fish"
 
