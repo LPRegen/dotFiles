@@ -28,6 +28,11 @@ alias gsa="git stash"
 alias gsp="git stash pop"
 # INFO: https://www.atlassian.com/git/tutorials/saving-changes/git-stash#stashing-your-work
 
+#   Python
+alias pyrs='python3 manage.py runserver'
+alias pymm='python3 manage.py makemigrations'
+alias pym='python3 manage.py migrate'
+
 #   Yarn
 alias yd="yarn dev"
 alias yb="yarn build"
