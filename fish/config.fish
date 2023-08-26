@@ -40,6 +40,9 @@ alias yl="yarn lint"
 alias yt="yarn test"
 alias ys="yarn storybook"
 
+#   Npm
+alias nd='npm run dev'
+
 ### 	    Nvim
 alias nm="nvim"
 alias mm="cd ~/.config/nvim/; nm"
