@@ -48,16 +48,16 @@ symbol = '󱔎 '
 format = ' [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 
 [git_status]
-format = "[   $all_status $ahead_behind]($style)"
+format = "[   ${all_status} ${ahead_behind}]($style)"
 style = 'fg:#E49B0F'
 conflicted = '󰈜 '
 up_to_date = '󰩐 Up to date '
 ahead = '󰬈 x${count}'
 behind = '󰬉 '
 diverged = '󰦾 '
-untracked = '󰎔 x${count}'
-stashed = '󱉙 '
-modified = '󰏬 x${count}'
+untracked = '󰬕 x${count}'
+stashed = '󰬚 '
+modified = '󰬔 x${count}'
 staged = '[ x${count}](green)'
-renamed = '👅'
-deleted = '󱠶 '
+renamed = '󰬙 '
+deleted = '󰬋 '
