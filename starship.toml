@@ -9,6 +9,7 @@ $directory\
 [ ](bg:#394260 fg:#769ff0)\
 $git_branch\
 [](fg:#394260 )\
+$git_status\
 $python
 
 [󱞪 ](fg:#769ff0)\
@@ -45,3 +46,18 @@ format = '[[$symbol $branch](fg:#769ff0 bg:#394260)]($style)'
 [python]
 symbol = '󱔎 '
 format = ' [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[git_status]
+format = "[   $all_status $ahead_behind]($style)"
+style = 'fg:#E49B0F'
+conflicted = '󰈜 '
+up_to_date = '󰩐 Up to date '
+ahead = '󰬈 x${count}'
+behind = '󰬉 '
+diverged = '󰦾 '
+untracked = '󰎔 x${count}'
+stashed = '󱉙 '
+modified = '󰏬 x${count}'
+staged = '[ x${count}](green)'
+renamed = '👅'
+deleted = '󱠶 '
