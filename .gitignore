@@ -2,6 +2,7 @@
 *
 
 # Include
+!README.md
 !.xinitrc
 !.gitignore
 !fish/
