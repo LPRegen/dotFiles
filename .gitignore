@@ -1,0 +1,9 @@
+# Ignore all
+*
+
+# Exclude
+!.gitignore
+!fish/
+!kitty/
+!ranger/
+!starship.toml
