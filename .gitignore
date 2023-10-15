@@ -1,7 +1,8 @@
 # Ignore all
 *
 
-# Exclude
+# Include
+!.xinitrc
 !.gitignore
 !fish/
 !kitty/
