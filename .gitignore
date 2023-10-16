@@ -5,6 +5,7 @@
 !README.md
 !.xinitrc
 !.gitignore
+dunst/dunstrc
 !fish/
 !kitty/
 !ranger/
