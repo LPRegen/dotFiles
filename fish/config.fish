@@ -29,6 +29,7 @@ alias pyrs='python3 manage.py runserver'
 alias pymm='python3 manage.py makemigrations'
 alias pym='python3 manage.py migrate'
 
+###     Package managers
 #   Yarn
 alias yd="yarn dev"
 alias yb="yarn build"
@@ -36,11 +37,18 @@ alias yl="yarn lint"
 alias yt="yarn test"
 alias ys="yarn storybook"
 
-#   Npm
-alias nd='npm run dev'
+#   Pnpm
+alias pd="pnpm dev"
+alias pt="pnpm test"
 
-### 	    Nvim
+#   Npm
+alias nd="npm run dev"
+
+###     Nvim
 alias nm="nvim"
 alias mm="cd ~/.config/nvim/; nm"
+
+alias secM="xrandr --output eDP-1 --primary --mode 1920x1080 --output HDMI-1 --
+mode 1360x768 --right-of eDP-1"
 
 starship init fish | source
