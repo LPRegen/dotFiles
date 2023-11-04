@@ -51,6 +51,7 @@ alias mm="cd ~/.config/nvim/; nm"
 alias secM="xrandr --output eDP-1 --primary --mode 1920x1080 --output HDMI-1 --mode 1360x768 --right-of eDP-1"
 
 #   Timew
+# NOTE: https://timewarrior.net/docs/
 alias tstart="timew start " #tag
 alias tstop="timew stop"
 alias ttags="timew tags"
