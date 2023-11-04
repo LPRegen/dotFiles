@@ -50,4 +50,12 @@ alias mm="cd ~/.config/nvim/; nm"
 
 alias secM="xrandr --output eDP-1 --primary --mode 1920x1080 --output HDMI-1 --mode 1360x768 --right-of eDP-1"
 
+#   Timew
+alias tstart="timew start " #tag
+alias tstop="timew stop"
+alias ttags="timew tags"
+alias tsum="timew summary today :ids" # display today's summary
+alias tsumW="timew summary :week :ids" # display week's summary
+
+
 starship init fish | source
